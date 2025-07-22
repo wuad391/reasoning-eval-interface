@@ -28,6 +28,7 @@ body {
   box-shadow: 2px 0 8px rgba(30,58,92,0.07);
   height: 100vh;
   min-height: 0;
+  overflow: hidden;
 }
 
 .sidebar h2 {
@@ -64,6 +65,7 @@ body {
   list-style: none;
   min-height: 0;
   max-height: none;
+  overflow-y: auto;
 }
 
 .pair-list li {
@@ -130,6 +132,7 @@ body {
   padding: 18px 40px;
   font-size: 0.80rem;
   cursor: pointer;
+  color: #1a0363;
   transition: border-color 0.2s, background 0.2s;
   box-shadow: 0 1px 4px rgba(30,58,92,0.04);
   user-select: none;
@@ -146,7 +149,7 @@ body {
 }
 
 .no-preference-btn {
-  margin: 0 auto 12px auto;
+  margin: 0 auto 30px auto;
   display: block;
   background: #e0e7ff;
   color: #1e3a5c;

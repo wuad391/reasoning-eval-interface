@@ -210,16 +210,23 @@ const App: React.FC = () => {
     <div className="app-container">
       <aside className="sidebar">
         <button
+          className="export-btn"
+          style={{ marginTop: '10px', width: 'calc(100% - 32px)', margin: '0 16px 18px 16px', padding: '12px 0', fontSize: 14 }}
+          onClick={handleExport}
+        >
+          Export Results
+        </button>
+        <button
           style={{
             width: 'calc(100% - 32px)',
-            margin: '0 16px 18px 16px',
+            margin: '0px 16px 18px 16px',
             padding: '7px 0',
-            fontSize: 15,
+            fontSize: 14,
             fontWeight: 600,
             borderRadius: 8,
             border: 'none',
-            background: '#e0e7ff',
-            color: '#1e3a5c',
+            background: '#edf1ffff',
+            color: '#093de8ff',
             boxShadow: '0 1px 4px rgba(30,58,92,0.04)',
             cursor: 'pointer',
             letterSpacing: 1,
@@ -233,14 +240,6 @@ const App: React.FC = () => {
         >
           Reset All Selections
         </button>
-        <button
-          className="export-btn"
-          style={{ width: 'calc(100% - 32px)', margin: '0 16px 18px 16px', padding: '12px 0' }}
-          onClick={handleExport}
-        >
-          Export Results
-        </button>
-        <h2>Pairs</h2>
         <div className="progress-bar-container">
           <div className="progress-bar">
             <div
@@ -275,7 +274,7 @@ const App: React.FC = () => {
         <div style={{
           width: '100%',
           maxWidth: 900,
-          margin: '-15px auto 12px auto',
+          margin: '0px auto 12px auto',
           padding: '0',
           background: 'rgba(224,242,254,0.7)',
           borderRadius: 8,
@@ -286,7 +285,7 @@ const App: React.FC = () => {
           lineHeight: 1.3,
           boxShadow: '0 1px 4px rgba(30,58,92,0.04)'
         }}>
-          <div style={{padding: '10px 16px', textAlign: 'center'}}>
+          <div style={{padding: '5px 16px', textAlign: 'center'}}>
             <b>Instructions:</b> ← select left, → select right, ↓ select no pref, ↵ next, ↑ prev
           </div>
         </div>
